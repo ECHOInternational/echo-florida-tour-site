@@ -1,0 +1,99 @@
+/* ECHO Brand Colors */
+:root {
+    --brand-green: #006f5e;
+    --tan-background: #efe6d1;
+    --dark-blue: #3c434c;
+    --dusty-blue: #6b8c9e;
+    --coral: #e27d60;
+    --medium-brown: #a3a380;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Open Sans', 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background-color: var(--tan-background);
+}
+
+/* Header Styles */
+header {
+    padding: 1.5rem 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.logo-placeholder {
+    /* Placeholder will be replaced with actual SVG logo */
+}
+
+/* Main Content Styles */
+main {
+    min-height: 60vh;
+}
+
+.tour-section {
+    background-color: white;
+    padding: 2rem;
+}
+
+.tour-section h1 {
+    margin-bottom: 1rem;
+}
+
+/* Footer Styles */
+footer {
+    color: white;
+}
+
+footer a {
+    color: var(--dusty-blue);
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--coral);
+    text-decoration: none;
+}
+
+footer .ui.inverted.header {
+    color: white;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 767px) {
+    header {
+        padding: 1rem 0;
+    }
+    
+    .logo-placeholder svg {
+        width: 120px;
+        height: 48px;
+    }
+    
+    .tour-section {
+        padding: 1.5rem;
+    }
+    
+    footer {
+        padding: 1.5rem 0 !important;
+    }
+    
+    footer .column {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .tour-section {
+        padding: 1.75rem;
+    }
+}
+
+/* Utility Classes */
+.ui.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
